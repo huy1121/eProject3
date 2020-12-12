@@ -1,5 +1,5 @@
 
-
+checkAuth()
 function postRegister(self) {
     event.preventDefault()
     let profile = JSON.parse(localStorage.getItem("profile") || "[]")
@@ -55,7 +55,7 @@ function postLogin(self) {
         window.location.href = 'home.html'
     }
 }
-checkAuth()
+
 function checkAuth() {
     let username = localStorage.getItem('username') 
     let auth = localStorage.getItem('auth') || ''
